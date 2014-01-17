@@ -30,7 +30,6 @@
 #modal #main h1.wi { margin-bottom:5px;}
 #modal #main p.sub { font-size:95%; color:#999;}
 
-#modal #main table.overview { width:40%;}
 #modal #main table.overview td.status { font-weight:bold; width:50%;}
 #modal #main table.overview tr.failed td { border-top:2px solid; font-size:90%; }
 #modal #main table.overview tr.failure td { background:#ffecec; border-top:2px solid #d37474; font-size:90%; color:#d37474;}
