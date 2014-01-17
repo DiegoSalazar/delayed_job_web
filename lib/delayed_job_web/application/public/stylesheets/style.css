@@ -2,6 +2,7 @@
 
 #modal .header { background:#000; padding:8px 5% 0 5%; border-bottom:1px solid #444;border-bottom:5px solid #3B5998;}
 #modal .header h1 { color:#333; font-size:90%; font-weight:bold; margin-bottom:6px;}
+#modal .header .nav { margin-bottom: 0; }
 #modal .header ul li { display:inline;}
 #modal .header ul li a { color:#fff; text-decoration:none; margin-right:10px; display:inline-block;  padding:6px; -webkit-border-top-right-radius:6px; -webkit-border-top-left-radius:6px; -moz-border-radius-topleft:6px; -moz-border-radius-topright:6px; }
 #modal .header ul li a:hover { background:#333;}
