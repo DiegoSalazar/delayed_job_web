@@ -9,26 +9,23 @@
       %button.close{"data-dismiss" => "modal", type: "button"}
         %span{"aria-hidden" => "true"} ×
         %span.sr-only Close
-      %h4#myModalLabel.modal-title Modal title
+      %h4#myModalLabel.modal-title Jobs
     
     .modal-body
       %div.header
         %ul.nav
           - tabs.each do |tab|
-            %li{:class => request.path_info == tab[:path] ? 'current' : ''}
-              %a.tab{:href => u(tab[:path])}= tab[:name]
+            %li{class: request.path_info == tab[:path] ? 'current' : ''}
+              %a.tab{href: u(tab[:path])}= tab[:name]
       %div#main
         = yield
       %div#footer
         %p
           Powered by
-          %a{:href => 'https://github.com/collectiveidea/delayed_job'} delayed_job
+          %a{href: 'https://github.com/collectiveidea/delayed_job'} delayed_job
           &
-          %a{:href => 'https://github.com/ejschmitt/delayed_job_web'} delayed_job_web
+          %a{href: 'https://github.com/ejschmitt/delayed_job_web'} delayed_job_web
 
-    .modal-footer
-      %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
-
-    %script{:type => "text/javascript", :src  => u("javascripts/jquery-1.7.1.min.js")}
-    %script{:type => "text/javascript", :src  => u("javascripts/jquery.relatize_date.js")}
-    %script{:type => "text/javascript", :src  => u("javascripts/application.js")}
+    %script{type: "text/javascript", src:  u("javascripts/jquery-1.7.1.min.js")}
+    %script{type: "text/javascript", src:  u("javascripts/jquery.relatize_date.js")}
+    %script{type: "text/javascript", src:  u("javascripts/application.js")}
